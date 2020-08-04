@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
+    ~/.vscode/inject.css: .vscode/inject.css
+    ~/.hyper.js: .hyper.js 
