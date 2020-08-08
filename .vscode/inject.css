@@ -1,7 +1,20 @@
 .linux {
-  font-family: "Rec Mono Duotone", monospace !important;
+  font-family: "Input Mono", monospace !important;
 }
 
 .decorationsOverviewRuler {
   width: 0 !important;
+}
+
+span.relative-current-line-number {
+  text-align: right !important;
+}
+
+span.relative-current-line-number:after {
+  content: "👉";
+  display: block;
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  right: 20px;
 }
