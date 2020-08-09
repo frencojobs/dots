@@ -126,6 +126,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/Documents/android-studio/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
