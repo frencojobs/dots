@@ -14,6 +14,9 @@ call plug#end()
 
 " Config Section
 
+" Use tab to select from suggestion
+inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
+
 " Change Tab to 2 Space
 set tabstop=2
 set shiftwidth=2
@@ -45,7 +48,6 @@ if (has("termguicolors"))
 endif
 
 syntax enable
-" colorscheme dracula
 
 " FileTree
 let g:NERDTreeShowHidden = 1
