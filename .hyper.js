@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: '"Rec Mono Duotone", Menlo, Consolas, monospace',
+    fontFamily: '"Source Code Pro", Menlo, Consolas, monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
