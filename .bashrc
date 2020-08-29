@@ -127,6 +127,7 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:$HOME/Documents/android-studio/bin"
+export PATH="$PATH:$HOME/swift/usr/bin"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
