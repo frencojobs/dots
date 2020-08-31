@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: '"Source Code Pro", Menlo, Consolas, monospace',
+    fontFamily: "'SF Mono', Menlo, Consolas, monospace",
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
