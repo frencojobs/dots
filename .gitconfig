@@ -1,0 +1,5 @@
+[user]
+        name = Frenco
+        email = hey@frenco.dev 
+[core]
+        editor = vim
