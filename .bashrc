@@ -128,6 +128,7 @@ export PATH="$PATH:/usr/lib/dart/bin"
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:$HOME/Documents/android-studio/bin"
 export PATH="$PATH:$HOME/swift/usr/bin"
+export PS1="\[\033[01;34m\]\w\[\033[00m\] \$ "
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
