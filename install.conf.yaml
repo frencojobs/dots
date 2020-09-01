@@ -3,12 +3,15 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
+    ~/.profile: .profile
+    ~/.zshrc: .zshrc
+    ~/.zprofile: .zprofile
     ~/.bashrc: .bashrc
-    ~/.bash_aliases: .bash_aliases
-    ~/.hyper.js: .hyper.js 
+    ~/.aliases: .aliases
+    ~/.hyper.js: .hyper.js
     ~/.gitconfig: .gitconfig
     ~/.vscode/inject.css: .vscode/inject.css
     ~/.config/nvim/init.vim: nvim/init.vim
