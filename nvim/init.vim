@@ -6,13 +6,16 @@ call plug#begin("~/.vim/plugged")
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-rls', 'coc-flutter']
   Plug 'leafgarland/typescript-vim'
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'dart-lang/dart-vim-plugin'
+  Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Config Section
+
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-rls', 'coc-flutter']
+let g:closetag_filenames = '*.html,*.jsx,*.tsx'
 
 " Use tab to select from suggestion
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
