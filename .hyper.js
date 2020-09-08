@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 15,
 
     // font family with optional fallbacks
-    fontFamily: "'SF Mono', Menlo, Consolas, monospace",
+    fontFamily: "'Source Code Pro', Menlo, Consolas, monospace",
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -97,7 +97,7 @@ module.exports = {
       lightBlack: "#686868",
       lightRed: "#FD6F6B",
       lightGreen: "#67F86F",
-      lightYellow: "#FFFA72",
+      lightYellow: "#f9d56e",
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
@@ -159,7 +159,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-rose-pine"],
+  plugins: ["hyperterm-twilight"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
