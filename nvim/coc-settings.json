@@ -9,6 +9,5 @@
     "json",
     "dart",
     "rust"
-  ],
-  "html.autoClosingTags": true
+  ]
 }
