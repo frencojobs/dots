@@ -1,5 +1,5 @@
 .linux {
-  font-family: "Source Code Pro", monospace !important;
+  font-family: "Cartograph CF", monospace !important;
 }
 
 .decorationsOverviewRuler {
@@ -17,4 +17,9 @@ span.relative-current-line-number:after {
   top: -1px;
   bottom: 0;
   right: 20px;
+}
+
+[class^="mtk"].mtki {
+  font-feature-settings: "ss01";
+  font-family: "Cartograph CF";
 }
