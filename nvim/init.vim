@@ -10,6 +10,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'alvan/vim-closetag'
+  Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn build'}
 call plug#end()
 
 " Config Section
