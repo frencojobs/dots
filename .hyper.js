@@ -9,10 +9,10 @@ module.exports = {
     updateChannel: "stable",
 
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: "'Hasklig', Menlo, Consolas, monospace",
+    fontFamily: "'Cartograph CF', Menlo, Consolas, monospace",
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -159,7 +159,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyperterm-twilight", "hypercwd"],
+  plugins: ["hyper-flat", "hypercwd", "hyper-active-tab"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

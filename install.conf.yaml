@@ -7,6 +7,7 @@
 
 - link:
     ~/.profile: .profile
+    ~/.alacritty.yml: .alacritty.yml
     ~/.zshrc: .zshrc
     ~/.zprofile: .zprofile
     ~/.bashrc: .bashrc
