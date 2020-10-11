@@ -1,4 +1,8 @@
+alias ls="exa"
+alias cat="bat"
 alias rm="trash"
 alias myip="curl icanhazip.com"
 alias browser="brave-browser"
 alias count='find . -type f | wc -l'
+alias vim='nvim'
+alias tmux='TERM=screen-256color tmux'

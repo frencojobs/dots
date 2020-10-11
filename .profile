@@ -26,6 +26,12 @@ export PATH="$PATH:$HOME/Documents/android-studio/bin"
 # swift
 export PATH="$PATH:$HOME/swift/usr/bin"
 
+# adb for scrcpy
+export ADB="/home/frenco/Android/Sdk/platform-tools/adb"
+
+# fvm
+export PATH="$PATH:$HOME/fvm/default/bin"
+
 # anaconda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -41,3 +47,7 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# base16 vim
+BASE16_SHELL=$HOME/.config/base16-shell/
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"

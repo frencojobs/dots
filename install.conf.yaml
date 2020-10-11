@@ -6,14 +6,16 @@
 - clean: ["~"]
 
 - link:
-    ~/.profile: .profile
-    ~/.alacritty.yml: .alacritty.yml
     ~/.zshrc: .zshrc
-    ~/.zprofile: .zprofile
     ~/.bashrc: .bashrc
+    ~/.profile: .profile
     ~/.aliases: .aliases
+    ~/.zprofile: .zprofile
     ~/.hyper.js: .hyper.js
     ~/.gitconfig: .gitconfig
-    ~/.vscode/inject.css: .vscode/inject.css
+    ~/.tmux.conf: .tmux.conf
+    ~/.config/starship.toml: starship.toml
     ~/.config/nvim/init.vim: nvim/init.vim
+    ~/.vscode/inject.css: .vscode/inject.css
+    ~/.config/alacritty/alacritty.yml: .alacritty.yml
     ~/.config/nvim/coc-settings.json: nvim/coc-settings.json

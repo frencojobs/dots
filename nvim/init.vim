@@ -11,6 +11,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'alvan/vim-closetag'
   Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn build'}
+  Plug 'chriskempson/base16-vim'
 call plug#end()
 
 " Config Section
@@ -62,7 +63,7 @@ let g:NERDTreeWinPos = "right"
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
-nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+nnoremap <silent> <C-space> :NERDTreeToggle<CR>
 
 " Integrated Terminal
 " open new split panes to right and below
@@ -97,3 +98,9 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit'
   \}
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+" base16 vim
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
