@@ -42,8 +42,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 10 
-    y: 0 
+    x: 10
+    y: 0
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -107,7 +107,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Cartograph CF 
+    family: Cartograph CF
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
@@ -172,36 +172,36 @@ font:
 
 # Colors (Tomorrow Night)
 colors:
-  # COLORSCHEME: base16-cupertino.yml
+  # COLORSCHEME: base16-google-dark.yml
   # Default colors
   cursor:
-    text: '0xffffff'
-    cursor: '0x404040'
+    text: '0x1d1f21'
+    cursor: '0xc5c8c6'
 
   # Normal colors
-  primary:
-    background: '0xffffff'
-    foreground: '0x404040'
+  # primary:
+    # background: '0x1d1f21'
+    # foreground: '0xc5c8c6'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
-  normal:
-    black: '0xffffff'
-    red: '0xc41a15'
-    green: '0x007400'
-    yellow: '0x826b28'
-    blue: '0x0000ff'
-    magenta: '0xa90d91'
-    cyan: '0x318495'
-    white: '0x404040'
+  # normal:
+    # black: '0x1d1f21'
+    # red: '0xcc342b'
+    # green: '0x198844'
+    # yellow: '0xfba922'
+    # blue: '0x3971ed'
+    # magenta: '0xa36ac7'
+    # cyan: '0x3971ed'
+    # white: '0xc5c8c6'
 
   # Bright colors
-  bright:
-    black: '0x808080'
-    red: '0xeb8500'
-    green: '0xc0c0c0'
-    yellow: '0xc0c0c0'
-    blue: '0x808080'
-    magenta: '0x404040'
-    cyan: '0x826b28'
-    white: '0x5e5e5e'
+  # bright:
+    # black: '0x969896'
+    # red: '0xf96a38'
+    # green: '0x282a2e'
+    # yellow: '0x373b41'
+    # blue: '0xb4b7b4'
+    # magenta: '0xe0e0e0'
+    # cyan: '0x3971ed'
+    # white: '0xffffff'
 

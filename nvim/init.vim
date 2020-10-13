@@ -27,6 +27,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Map spacebar as <leader> 
+let mapleader="\<Space>"
+
 " Commentor
 noremap <leader>/ :Commentary<CR>
 
