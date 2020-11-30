@@ -6,3 +6,8 @@ error_symbol = "[✗](bold red) "
 
 [git_branch]
 symbol = "🌵 "
+
+[status]
+symbol = "💣 "
+format = '[\[$symbol$status\]]($style) '
+disabled = false

@@ -12,3 +12,5 @@ eval "$(starship init zsh)"
 
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
