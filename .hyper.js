@@ -12,7 +12,7 @@ module.exports = {
     fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: "'Cartograph CF', Menlo, Consolas, monospace",
+    fontFamily: "'Input Mono', Menlo, Consolas, monospace", 
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
@@ -21,7 +21,7 @@ module.exports = {
     fontWeightBold: "bold",
 
     // line height as a relative unit
-    lineHeight: 1,
+    // lineHeight: 1,
 
     // letter spacing as a relative unit
     letterSpacing: 0,

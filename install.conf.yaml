@@ -14,7 +14,7 @@
     ~/.zprofile: .zprofile
     ~/.hyper.js: .hyper.js
     ~/.gitconfig: .gitconfig
-    ~/.tmux.conf: .tmux.conf
+    ~/.tmux.conf.local: .tmux.conf.local
     ~/.config/starship.toml: starship.toml
     ~/.config/nvim/init.vim: nvim/init.vim
     ~/.vscode/inject.css: .vscode/inject.css
