@@ -1,3 +1,9 @@
+# old ones
+alias cato="/usr/bin/cat"
+alias lso="/usr/bin/ls"
+alias vimo="/usr/bin/vim"
+
+# new ones
 alias ls="exa"
 alias cat="bat"
 alias rm="trash"

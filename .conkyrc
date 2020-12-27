@@ -25,11 +25,16 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ]]
 
+--[[
+${color grey}External IP: $color${execi 1000  wget -q -O- http://ipecho.net/plain; echo}
+]]
+
+
 conky.config = {
 	own_window_argb_visual = true,
 	own_window_argb_value = 150,
 	double_buffer = true,
-    alignment = 'top_right',
+    alignment = 'top_left',
     background = false,
     border_width = 10,
     cpu_avg_samples = 2,
@@ -41,7 +46,7 @@ conky.config = {
     draw_outline = false,
     draw_shades = false,
     use_xft = true,
-    font = 'SF Mono:size=12',
+    font = 'Input Mono:size=12',
     gap_x = 30,
     gap_y = 60,
     minimum_height = 5,
@@ -62,6 +67,7 @@ conky.config = {
     show_graph_range = false
 }
 
+
 conky.text = [[
 $sysname $kernel on $machine
 $hr
@@ -72,7 +78,6 @@ ${color grey}RAM Usage:$color $mem/$memmax - $memperc% ${membar 4}
 ${color grey}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar 4}
 ${color grey}CPU Usage:$color $cpu% ${cpubar 4}
 ${color grey}Processes:$color $processes  ${color grey}Running:$color $running_processes
-${color grey}External IP: $color${execi 1000  wget -q -O- http://ipecho.net/plain; echo}
 $hr
 ${color grey}File systems: $color${fs_used /}/${fs_size /}
 ${color grey}Networking:

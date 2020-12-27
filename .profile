@@ -32,6 +32,11 @@ export ADB="/home/frenco/Android/Sdk/platform-tools/adb"
 # fvm
 export PATH="$PATH:$HOME/fvm/default/bin"
 
+# golang 
+export GOROOT="/usr/local/go"
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+
 # anaconda
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

@@ -11,6 +11,7 @@ call plug#begin("~/.vim/plugged")
   Plug 'dart-lang/dart-vim-plugin'
   Plug 'alvan/vim-closetag'
   Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn build'}
+  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'chriskempson/base16-vim'
 call plug#end()
 
@@ -92,6 +93,12 @@ nnoremap <A-h> <C-w>h
 nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
+
+" Float Popups Scrolling
+nnoremap <nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+nnoremap <nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+inoremap <nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+inoremap <nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
 
 " Fuzzy Searcher
 nnoremap <C-p> :FZF<CR>
