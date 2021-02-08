@@ -9,7 +9,6 @@
     ~/.zshrc: .zshrc
     ~/.bashrc: .bashrc
     ~/.profile: .profile
-    ~/.conkyrc: .conkyrc 
     ~/.aliases: .aliases
     ~/.zprofile: .zprofile
     ~/.hyper.js: .hyper.js

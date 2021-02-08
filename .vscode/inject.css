@@ -1,5 +1,6 @@
 .linux {
-  font-family: "Input Mono", monospace !important;
+  font-family: Hasklig, monospace !important;
+  font-weight: 500;
 }
 
 .decorationsOverviewRuler {
