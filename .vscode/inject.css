@@ -1,11 +1,11 @@
 .linux {
-  font-family: Hasklig, monospace !important;
-  font-weight: 500;
+  font-family: "Office Code Pro", monospace !important;
 }
 
 .decorationsOverviewRuler {
   width: 0 !important;
 }
+
 /*
 [class^="mtk"].mtki {
   font-feature-settings: "ss01";

@@ -19,3 +19,4 @@
     ~/.vscode/inject.css: .vscode/inject.css
     ~/.config/alacritty/alacritty.yml: .alacritty.yml
     ~/.config/nvim/coc-settings.json: nvim/coc-settings.json
+    ~/.Xresources-regolith: .Xresources-regolith
