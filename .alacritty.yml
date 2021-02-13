@@ -107,7 +107,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Office Code Pro 
+    family: MonoLisa 
 
     # The `style` can be specified to pick a specific face.
     style: Medium 

@@ -3,11 +3,11 @@
 
 ! -- Styles - Fonts
 ! Insert custom typeface definitions here
-! Typeface: Office Code Pro
-#define typeface_bar_glyph  Office Code Pro Bold 13
-#define typeface_wm         pango:Office Code Pro Medium 13
-#define typeface_bar        pango:Office Code Pro Medium 13, Material Design Icons 13
-#define typeface_rofi       Office Code Pro Medium 16
+! Typeface: MonoLisa 
+#define typeface_bar_glyph  MonoLisa Medium 13
+#define typeface_wm         pango:MonoLisa Medium 13
+#define typeface_bar        pango:MonoLisa Medium 13, Material Design Icons 13
+#define typeface_rofi       MonoLisa Medium 16
 
 #define typeface_bar_glyph_battery_0 
 #define typeface_bar_glyph_battery_100 
@@ -60,7 +60,8 @@ i3-wm.bar.position: top
 #define WORKSPACE_MAKE_NAME(INDEX, NAME, FONT, COLOR, GLYPH) INDEX:<span font_desc=FONT>NAME</span>
   
 i3-wm.workspace.01.name: WORKSPACE_MAKE_NAME(1, dev, glyph_font, QUOTE(color_blue), glyph)
-i3-wm.workspace.02.name: WORKSPACE_MAKE_NAME(2, read, glyph_font, QUOTE(color_yellow), glyph)
-i3-wm.workspace.03.name: WORKSPACE_MAKE_NAME(3, mus, glyph_font, QUOTE(color_green), glyph)
-i3-wm.workspace.04.name: WORKSPACE_MAKE_NAME(4, you, glyph_font, QUOTE(color_red), glyph)
+i3-wm.workspace.02.name: WORKSPACE_MAKE_NAME(2, [dft], glyph_font, QUOTE(color_cyan), glyph)
+i3-wm.workspace.03.name: WORKSPACE_MAKE_NAME(3, read, glyph_font, QUOTE(color_yellow), glyph)
+i3-wm.workspace.04.name: WORKSPACE_MAKE_NAME(4, mus, glyph_font, QUOTE(color_green), glyph)
+i3-wm.workspace.05.name: WORKSPACE_MAKE_NAME(5, you, glyph_font, QUOTE(color_red), glyph)
 
