@@ -1,14 +1,44 @@
 .linux {
-  font-family: MonoLisa, monospace !important;
+  font-family: "Test Söhne Mono", monospace !important;
 }
 
 .decorationsOverviewRuler {
   width: 0 !important;
 }
 
-/*
-[class^="mtk"].mtki {
-  font-feature-settings: "ss01";
-  font-family: "Cartograph CF";
+.monaco-workbench .part > .title > .title-label {
+  display: none !important;
 }
-*/
+
+.title.show-file-icons {
+  display: none !important;
+}
+
+.editor-container,
+.editor-instance > div,
+.monaco-editor.mac,
+.overflow-guard,
+.editor-scrollable {
+  height: 100% !important;
+}
+
+span.relative-current-line-number {
+  text-align: right !important;
+}
+
+span.relative-current-line-number:after {
+  content: ">";
+  display: block;
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  right: 20px;
+}
+
+.scrollbar {
+  display: none !important;
+}
+
+/* [class^="mtk"].mtki { */
+/*   font-feature-settings: "ss01"; */
+/* } */

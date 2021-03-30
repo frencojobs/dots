@@ -15,5 +15,3 @@ source $HOME/.aliases
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -f "/home/frenco/.ghcup/env" ] && source "/home/frenco/.ghcup/env" # ghcup-env
-
-colorscript -e elfman

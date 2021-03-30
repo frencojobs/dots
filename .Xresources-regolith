@@ -3,11 +3,11 @@
 
 ! -- Styles - Fonts
 ! Insert custom typeface definitions here
-! Typeface: MonoLisa 
-#define typeface_bar_glyph  MonoLisa Medium 13
-#define typeface_wm         pango:MonoLisa Medium 13
-#define typeface_bar        pango:MonoLisa Medium 13, Material Design Icons 13
-#define typeface_rofi       MonoLisa Medium 16
+! Typeface: Test Söhne Mono  
+#define typeface_bar_glyph  Test Söhne Mono Medium 13
+#define typeface_wm         pango:Test Söhne Mono Medium 13
+#define typeface_bar        pango:Test Söhne Mono Medium 13, Material Design Icons 13
+#define typeface_rofi       Test Söhne Mono Medium 16
 
 #define typeface_bar_glyph_battery_0 
 #define typeface_bar_glyph_battery_100 
