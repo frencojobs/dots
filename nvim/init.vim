@@ -1,24 +1,53 @@
 call plug#begin("~/.vim/plugged")
   " Plugin Section
-  
+  " coc.nvim
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Julia plugins
+  Plug 'JuliaEditorSupport/julia-vim'
+  Plug 'kdheepak/JuliaFormatter.vim'
+  " Smooth Scroll ?
+  Plug 'psliwka/vim-smoothie'
+  " Explorer
   Plug 'scrooloose/nerdtree'
+  " For Comment Shortcut
   Plug 'tpope/vim-commentary'
+  " FZF 
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " TypeScript
   Plug 'leafgarland/typescript-vim'
   Plug 'peitalin/vim-jsx-typescript'
+  " Dart
   Plug 'dart-lang/dart-vim-plugin'
+  " Autoclose Tags
   Plug 'alvan/vim-closetag'
+  " TailwindCSS
   Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn build'}
+  " Golang
   Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+  " Themes
+  Plug 'NLKNguyen/papercolor-theme'
   Plug 'chriskempson/base16-vim'
+  Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
-" Config Section
+" Code Folding
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
 
+" Config Section
 let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-rls', 'coc-flutter']
 let g:closetag_filenames = '*.html,*.jsx,*.tsx'
+let g:JuliaFormatter_always_launch_server=1
+
+" run formatter on julia file saving
+autocmd BufWritePost *.jl :JuliaFormatterFormat
+autocmd BufWritePost *.py :CocCommand pyright.organizeimports
+
+" set filetypes as typescriptreact
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
 
 " Use tab to select from suggestion
 inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
@@ -35,6 +64,7 @@ let mapleader="\<Space>"
 noremap <leader>/ :Commentary<CR>
 
 " Show Relative Line Numbers
+set number
 set relativenumber
 
 " Map Ctrl+S to Save
@@ -67,7 +97,7 @@ let g:NERDTreeWinPos = "right"
 " Automaticaly close nvim if NERDTree is only thing left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " Toggle
-nnoremap <silent> <C-space> :NERDTreeToggle<CR>
+nnoremap <C-space> :NERDTreeToggle<CR>
 
 " Integrated Terminal
 " open new split panes to right and below
@@ -109,8 +139,26 @@ let g:fzf_action = {
   \}
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
+" Change prompt menu background color
+:hi Pmenu ctermfg=0 ctermbg=13 guibg=Black
+
 " base16 vim
-if filereadable(expand("~/.vimrc_background"))
-  let base16colorspace=256
-  source ~/.vimrc_background
-endif
+" if filereadable(expand("~/.vimrc_background"))
+"   let base16colorspace=256
+"   source ~/.vimrc_background
+" endif
+
+" Set colorscheme to PaperColor
+" let g:PaperColor_Theme_Options = {
+"   \   'theme': {
+"   \     'default': { 
+"   \       'allow_bold' : 0
+"   \     }
+"   \   }
+"   \ }
+" set background=dark
+" colorscheme PaperColor
+"
+" Set to ayu
+let ayucolor="dark"
+colorscheme ayu

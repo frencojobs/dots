@@ -8,6 +8,7 @@
     "html",
     "json",
     "dart",
-    "rust"
+    "rust",
+    "python"
   ]
 }

@@ -1,6 +1,24 @@
 add_newline = false 
 
-format = " $all"
+format = """
+$username\
+$hostname\
+$shlvl\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$memory_usage\
+$env_var\
+$custom\
+$cmd_duration\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
 
 [aws]
 symbol = " "
@@ -26,7 +44,7 @@ symbol = " "
 symbol = " "
 
 [git_branch]
-symbol = "߂ "
+symbol = "שׂ "
 
 [golang]
 symbol = " "
@@ -65,6 +83,6 @@ symbol = " "
 symbol = " "
 
 [character]
-success_symbol = " \\$"
+success_symbol = " "
 error_symbol = "[x](bold red)"
 vicmd_symbol = "[V](bold green)"

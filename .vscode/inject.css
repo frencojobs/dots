@@ -1,39 +1,26 @@
 .linux {
-  font-family: "Test Söhne Mono", monospace !important;
+  font-family: "NotoSansMono Nerd Font", monospace !important;
 }
 
 .decorationsOverviewRuler {
   width: 0 !important;
 }
 
-.monaco-workbench .part > .title > .title-label {
-  display: none !important;
-}
+/* .monaco-workbench .part > .title > .title-label { */
+/*   display: none !important; */
+/* } */
 
-.title.show-file-icons {
-  display: none !important;
-}
+/* .title.show-file-icons { */
+/*   display: none !important; */
+/* } */
 
-.editor-container,
-.editor-instance > div,
-.monaco-editor.mac,
-.overflow-guard,
-.editor-scrollable {
-  height: 100% !important;
-}
-
-span.relative-current-line-number {
-  text-align: right !important;
-}
-
-span.relative-current-line-number:after {
-  content: ">";
-  display: block;
-  position: absolute;
-  top: -1px;
-  bottom: 0;
-  right: 20px;
-}
+/* .editor-container, */
+/* .editor-instance > div, */
+/* .monaco-editor.mac, */
+/* .overflow-guard, */
+/* .editor-scrollable { */
+/*   height: 100% !important; */
+/* } */
 
 .scrollbar {
   display: none !important;

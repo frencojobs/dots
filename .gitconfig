@@ -1,5 +1,10 @@
 [user]
         name = Frenco
         email = hey@frenco.dev 
+	signingkey = hey@frenco.dev
 [core]
         editor = vim
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
